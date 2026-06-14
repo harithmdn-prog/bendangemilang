@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <title>Homestay Bendang Gemilang</title>
+</head>
+<body>
+ <header class="sticky top-0 z-40 backdrop-blur-xl bg-[#FAF9F6]/75 border-b border-black/5">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between md:gap-9">
+      <a href="index.html" class="md:w-full">
+        <div class="leading-tight ">
+          <div class="text-lg font-display font-semibold text-[#1A1A1A] tracking-tight">Bendang Gemilang</div>
+          <div class="text-sm text-[#4a5568]">Homestay · Tanjung Karang </div>
+        </div></a>
+          <nav id="mobileMenu" class=" md:flex-row md:flex md:static md:items-center md:justify-end md:px-0 hidden items-center gap-9 flex-col flex absolute px-5 w-full left-0 top-[100%] bg-white md:bg-transparent">
+            <a data-testid="nav-home" href="index.html" class="nav-link text-sm text-[#1A1A1A] hover:text-[#4a5568] transition-colors duration-300">Home </a>
+            <a data-testid="nav-gallery" href="gallery.html" class="nav-link text-sm text-[#1A1A1A] hover:text-[#4a5568] transition-colors duration-300">Gallery</a>
+            <a data-testid="nav-accommodation" href="accommodation.html" class="nav-link text-sm text-[#1A1A1A] hover:text-[#4a5568] transition-colors duration-300">Accommodation</a>
+            <a data-testid="nav-contact" href="contact.html" class="nav-link text-sm text-[#1A1A1A] hover:text-[#4a5568] transition-colors duration-300">Contact</a>
+            <span id="underline" class="absolute bottom-0 h-0.5 bg-[#4a5568] transition-all duration-300"></span>
+            <a href="booking.html" class="bg-green-900 text-[#ffffff] hover:text-[#dbede8] text-sm px-5 py-2.5 rounded-full font-medium transition-all duration-300 hover:bg-[#043a08] hover:-translate-y-1 hover:shadow-lg">Book Now</a>
+          </nav>
+          <span id="menuBtn" name="menuBtn" onclick="toggleMenu(this)" class="md:hidden flex cursor-pointer p-2 rounded-md text-[#1A1A1A] hover:text-[#4a5568] transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="lucide lucide-menu"><line x1="3" x2="21" y1="12" y2="12"></line><line x1="3" x2="21" y1="6" y2="6"></line><line x1="3" x2="21" y1="18" y2="18"></line></svg>
+          </span>
+    </div>
+  </header>
+  <main>
+    <section class="max-w-7xl mx-auto px-6 md:px-12 py-12 backdrop-blur-md bg-white/15 rounded-r-full border-white/20 shadow-xl">
+      <h1 class="text-3xl font-display font-bold text-green-700 tracking-[0.1em] mb-4">Accommodation</h1>
+      <p class="text-sm text-[#4a5568] mb-6">Rasai pengalaman yang tak terlupakan di homestay kami, menyediakan pelbagai jenis fasiliti yang nyaman dan menarik.</p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 md:px-12 py-12">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <img src="./src/assets/luarcabin.jpg" alt="Accommodation Image 1" class="w-full h-[50%] rounded-lg object-cover mb-4">
+          <h2 class="text-xl font-semibold text-[#1A1A1A] mb-2">Cozy Cabin</h2>
+          <p class="text-sm text-[#4a5568]">Cabin kami menawarkan suasana yang hangat dan mengundang, sempurna untuk pasangan atau pelancong solo. Nikmati pesona nyaman dan kemudahan moden untuk penginapan yang selesa.</p>
+
+          <div class="mt-4 flex gap-4 h-[80%] w-full overflow-x-auto scrollbar-hide">
+            <img src="./src/cabin1/cabin1ruang.png" alt="Accommodation Image 1" class="md:w-[50%] md:h-[30%] w-full h-[50%] rounded-lg object-cover mb-4">
+            <img src="./src/cabin1/toilet1.png " alt="Accommodation Image 1" class="md:w-[50%] md:h-[30%] w-full h-[50%] rounded-lg object-cover mb-4">
+            <img src="./src/kolam.jpg" alt="Accommodation Image 1" class="md:w-[50%] md:h-[30%] w-full h-[50%] rounded-lg object-cover mb-4">
+          </div>
+        </div>
+          
+        <div>
+          <img src="./src/mainhouse/ruangtamu.jpg" alt="Accommodation Image 2" class="w-full h-[50%] rounded-lg object-cover mb-4">
+          <h2 class="text-xl font-semibold text-[#1A1A1A] mb-2">Main House</h2>
+          <p class="text-sm text-[#4a5568]">The Main House direka untuk menampung kumpulan yang lebih besar, menawarkan ruang yang luas dan keselesaan yang optimum. Dengan beberapa bilik tidur serta ruang tamu yang selesa, ia sangat sesuai untuk keluarga atau rakan-rakan yang melancong bersama.</p>
+
+          <div class="mt-8 flex gap-4 h-[80%] w-full overflow-x-auto scrollbar-hide">
+            <img src="./src/mainhouse/ruangtamu.jpg" alt="Accommodation Image 1" class="md:w-[50%] md:h-[30%] w-full h-[50%] rounded-lg object-cover mb-4">
+            <img src="./src/mainhouse/dining.jpg" alt="Accommodation Image 1" class="md:w-[50%] md:h-[30%] w-full h-[50%] rounded-lg object-cover mb-4">
+            <img src="./src/mainhouse/bilik1.jpg" alt="Accommodation Image 1" class="md:w-[50%] md:h-[30%] w-full h-[50%] rounded-lg object-cover mb-4">
+            <img src="./src/mainhouse/bilik2.jpg" alt="Accommodation Image 1" class="md:w-[50%] md:h-[30%] w-full h-[50%] rounded-lg object-cover mb-4">
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer class="bg-green-950 text-[#faf9f6]" data-testid="site-footer">
+      <div class="max-w-7xl mx-auto px-6 md:px-12 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4"><div class="font-display text-xl font-semibold">Bendang Gemilang Homestay</div>
+        </div>
+        <p class="text-[#faf9f6]/80 max-w-md leading-relaxed text-sm">Rasai ketenangan di homestay kami yang terletak indah di tengah keindahan alam semula jadi</p>
+      </div>
+      <div>
+        <h4 class="font-display font-semibold text-lg mb-4 text-[#d4b996]">Explore</h4>
+        <ul class="space-y-2 text-sm text-[#faf9f6]/80">
+          <li><a href="gallery.html" class="hover:text-white transition-colors duration-300">Gallery</a></li>
+          <li><a href="accommodation.html" class="hover:text-white transition-colors duration-300">Accommodation</a></li>
+          <li><a href="contact.html" class="hover:text-white transition-colors duration-300">Contact</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors duration-300">About</a></li>
+      </div>
+      <div>
+        <h4 class="font-display font-semibold text-lg mb-4 text-[#d4b996]">Contact</h4>
+        <ul class="space-y-3 text-sm text-[#faf9f6]/80">
+          <li class="flex gap-2 items-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin mt-1 shrink-0" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> Tanjong Karang, Kuala Selangor, Malaysia</li>
+          <li class="flex gap-2 items-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> <a href="https://wa.me/60133518696" target="_blank" rel="noopener noreferrer">+60 13-351 8696</a></li>
+          <li><a href="adminlogin.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-3.123 0-5.914-1.441-7.749-3.69.259-.588.783-.995 1.867-1.246 2.244-.518 4.459-.981 3.393-2.945-3.155-5.82-.899-9.119 2.489-9.119 3.322 0 5.634 3.177 2.489 9.119-1.035 1.952 1.1 2.416 3.393 2.945 1.082.25 1.61.655 1.871 1.241-1.836 2.253-4.628 3.695-7.753 3.695z"></svg></a></li>
+        </ul>
+      </div>
+    </footer>   
+
+<script src="js/script.js"></script>
+</body>
+</html>

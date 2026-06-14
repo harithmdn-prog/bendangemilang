@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <title>Admin Dashboard - Bendang Gemilang</title>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+
+  <div class="text-white p-4 mb-8">
+    <button onclick="logout()" class="bg-green-500 text-white px-5 py-3 rounded-xl mr-0">Logout</button>
+  </div>
+
+  <div class="max-w-7xl mx-auto">
+
+    <div class="flex items-center justify-between mb-8">
+      <h1 class="text-3xl font-bold">Booking Management</h1>
+
+      <button
+        onclick="loadBookings()"
+        class="bg-blue-600 text-white px-5 py-3 rounded-xl cursor-pointer  "
+      >
+        Refresh
+      </button>
+    </div>
+
+    <!-- CREATE BOOKING -->
+
+    <div class="bg-white rounded-2xl shadow-md p-6 mb-10">
+
+      <h2 class="text-2xl font-semibold mb-5">
+        Register Booking
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-4">
+
+        <input
+          id="name"
+          type="text"
+          placeholder="Customer Name"
+          class="border p-3 rounded-xl"
+        />
+
+        <input
+          id="email"
+          type="email"
+          placeholder="Email"
+          class="border p-3 rounded-xl"
+        />
+
+        <input
+          id="phone"
+          type="text"
+          placeholder="Phone"
+          class="border p-3 rounded-xl"
+        />
+
+        <select
+          id="homestayId"
+          class="border p-3 rounded-xl"
+        >
+          <option value="1">Main House</option>
+          <option value="2">Cabin 1</option>
+          <option value="3">Cabin 2</option>
+        </select>
+
+        <input
+          id="checkIn"
+          type="date"
+          class="border p-3 rounded-xl"
+        />
+
+        <input
+          id="checkOut"
+          type="date"
+          class="border p-3 rounded-xl"
+        />
+
+        <input
+          id="totalPrice"
+          type="number"
+          placeholder="Total Price"
+          class="border p-3 rounded-xl"
+        />
+
+        <select
+          id="paymentStatus"
+          class="border p-3 rounded-xl"
+        >
+          <option value="completed">Completed</option>
+          <option value="pending">Pending</option>
+        </select>
+
+      </div>
+
+      <button
+        onclick="createBooking()"
+        class="mt-5 bg-green-600 text-white px-6 py-3 rounded-xl"
+      >
+        Save Booking
+      </button>
+
+    </div>
+
+    <!-- TABLE -->
+
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+
+      <div class="overflow-x-auto">
+
+        <table class="w-full text-left">
+
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="p-4">Customer</th>
+              <th class="p-4">Email</th>
+              <th class="p-4">Phone</th>
+              <th class="p-4">Homestay</th>
+              <th class="p-4">Check In</th>
+              <th class="p-4">Check Out</th>
+              <th class="p-4">Price</th>
+              <th class="p-4">Status</th>
+              <th class="p-4">Action</th>
+            </tr>
+          </thead>
+
+          <tbody id="bookingTable"></tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>
