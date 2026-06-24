@@ -1,4 +1,4 @@
-    const API_URL = 'https://bendangemilang.vercel.app//api/booking';
+    const API_URL = 'https://bendangemilang.onrender.com/api/booking';
 
     if (localStorage.getItem('adminLoggedIn') !== 'true') {
 
