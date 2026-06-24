@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, '..', 'frontends')))
 app.use(express.static(path.join(__dirname, '..', 'admin')))
 app.use(express.static(path.join(__dirname, '..', 'src')))
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('API is running')
 })
 
