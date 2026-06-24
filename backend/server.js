@@ -39,11 +39,6 @@ app.use(express.static(
     path.join(__dirname, '..', 'frontends')))
 
 
-
-app.listen(5000, () => {
-  console.log('Server running')
-})
-
 const paymentRoutes = require('./routes/paymentRoutes')
 const bookingRoutes = require('./routes/bookingRoutes')
 const { createPayment, paymentCallback } = require('./controllers/paymentController')
@@ -71,3 +66,8 @@ app.post('/api/login', (req, res) => {
     res.status(401).json({ message: 'Login failed' })
 })
 
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`)
+})
