@@ -1,4 +1,3 @@
-
 let totalPrice = 0
 
 function selectHomestay(id, price) {
@@ -130,7 +129,7 @@ async function loadBookings() {
 
   try {
 
-    const response = await fetch('http://localhost:5000/api/booking')
+    const response = await fetch('https://bendangemilang.vercel.app/api/booking')
     const data = await response.json()
 
     console.log(data)

@@ -1,4 +1,4 @@
-    const API_URL = 'http://localhost:5000/api/booking';
+    const API_URL = 'https://bendangemilang.vercel.app//api/booking';
 
     if (localStorage.getItem('adminLoggedIn') !== 'true') {
 
