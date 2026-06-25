@@ -33,9 +33,7 @@ app.get('/api', (req, res) => {
 
 app.use(express.static(
     path.join(__dirname, '..', 'frontends')))
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'frontends', 'index.html'));
-});
+
 
 
 const paymentRoutes = require('./routes/paymentRoutes')
