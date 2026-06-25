@@ -35,7 +35,6 @@ app.use(express.static(
     path.join(__dirname, '..', 'frontends')))
 
 
-
 const paymentRoutes = require('./routes/paymentRoutes')
 const bookingRoutes = require('./routes/bookingRoutes')
 const { createPayment, paymentCallback } = require('./controllers/paymentController')
