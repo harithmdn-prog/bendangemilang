@@ -27,16 +27,15 @@ app.use(express.urlencoded({ extended: true }))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-app.use(express.static(path.join(__dirname, '..', 'frontends')))
-app.use(express.static(path.join(__dirname, '..', 'admin')))
-app.use(express.static(path.join(__dirname, '..', 'src')))
-
 app.get('/api', (req, res) => {
   res.send('API is running')
 })
 
 app.use(express.static(
     path.join(__dirname, '..', 'frontends')))
+    app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'frontends', 'index.html'));
+});
 
 
 const paymentRoutes = require('./routes/paymentRoutes')

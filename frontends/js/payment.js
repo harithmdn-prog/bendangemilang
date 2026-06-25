@@ -20,7 +20,7 @@ async function proceedPayment() {
   }
 
   try {
- const response = await fetch('https://bendangemilang.vercel.app//api/create-payment', {
+  const response = await fetch ('https://bendangemilang.onrender.com/api/create-payment', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

@@ -129,7 +129,7 @@ async function loadBookings() {
 
   try {
 
-    const response = await fetch('https://bendangemilang.vercel.app/api/booking')
+    const response = await fetch('https://bendangemilang.onrender.com/api/booking')
     const data = await response.json()
 
     console.log(data)
