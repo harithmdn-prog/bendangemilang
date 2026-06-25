@@ -17,7 +17,7 @@ const createPayment = async (req, res) => {
             billPriceSetting: 1,
             billPayorInfo: 1,
             billAmount: totalPrice * 100, // RM10.00 (amount in cents)
-            billReturnUrl: 'https://bendangemilang.vercel.app/success.html',
+            billReturnUrl: 'https://bendangemilang.onrender.app/success.html',
             billCallbackUrl: 'https://bendangemilang.onrender.com/api/callback',
             billExternalReferenceNo: 'ORDER-1001',
             billTo: name,
