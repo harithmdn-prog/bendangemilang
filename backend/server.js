@@ -19,7 +19,7 @@ const app = express()
 connectDB()
 
 app.use(cors({
-  origin: 'https://bendangemilang.vercel.app',
+  origin: 'https://bendangemilang.onrender.com',
 
 }))
 app.use(express.json())
@@ -33,7 +33,7 @@ app.get('/api', (req, res) => {
 
 app.use(express.static(
     path.join(__dirname, '..', 'frontends')))
-    app.get('*', (req, res) => {
+app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'frontends', 'index.html'));
 });
 
